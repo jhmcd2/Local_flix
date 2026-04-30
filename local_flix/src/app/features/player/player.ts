@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-player',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './player.html',
   styleUrl: './player.scss',
 })

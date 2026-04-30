@@ -7,10 +7,11 @@ import {ComicDetail} from './features/comic-detail/comic-detail'
 import { ImageDetail } from './features/image-detail/image-detail';
 import { MusicDetail } from './features/music-detail/music-detail';
 import { Player } from './features/player/player';
+import { AppComponent } from './app';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home/', component: HomeComponent },
   { path: 'movie/:id', component: MovieDetail },
   { path: 'player/:id', component: Player }
 ];

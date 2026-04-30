@@ -1,11 +1,14 @@
 // movie-grid.component.ts
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-comic-grid',
-  templateUrl: './comic-grid.component.html',
-  styleUrls: ['./comic-grid.component.scss']
+    standalone: true,
+  imports: [CommonModule],
+  templateUrl: './comic-grid.html',
+  styleUrls: ['./comic-grid.scss']
 })
 export class ComicGridComponent {
-  @Input() movies: any[] = [];
+  @Input() comics: any[] = [];
 }
