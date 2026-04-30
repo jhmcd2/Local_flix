@@ -1,0 +1,7 @@
+<!-- comic-grid.component.html -->
+<div class="comic-grid">
+  <div class="comic-card" *ngFor="let comic of comics">
+    <img [src]="comic.thumbnailUrl" alt="comic.title" />
+    <div class="comic-title">{{ comic.title }}</div>
+  </div>
+</div>

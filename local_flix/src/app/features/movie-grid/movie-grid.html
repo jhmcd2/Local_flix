@@ -1,0 +1,7 @@
+<!-- movie-grid.component.html -->
+<div class="movie-grid">
+  <div class="movie-card" *ngFor="let movie of movies">
+    <img [src]="movie.thumbnailUrl" alt="movie.title" />
+    <div class="movie-title">{{ movie.title }}</div>
+  </div>
+</div>

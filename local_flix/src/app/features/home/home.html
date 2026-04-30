@@ -1,5 +1,4 @@
-<div class="movie-row">
-  <div *ngFor="let movie of movies" class="movie-card">
-    {{ movie.title }}
-  </div>
-</div>
+<!-- home.component.html -->
+<app-navbar></app-navbar>
+<app-hero [movie]="featuredMovie"></app-hero>
+<app-movie-grid [movies]="movies"></app-movie-grid>

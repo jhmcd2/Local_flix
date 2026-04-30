@@ -1,0 +1,7 @@
+<!-- image-grid.component.html -->
+<div class="image-grid">
+  <div class="image-card" *ngFor="let image of images">
+    <img [src]="image.thumbnailUrl" alt="image.title" />
+    <div class="image-title">{{ image.title }}</div>
+  </div>
+</div>

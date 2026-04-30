@@ -13,12 +13,14 @@ import { ImageDetail } from '../image-detail/image-detail'
 })
 export class HomeComponent implements OnInit {
   movies: Movie[] = [];
+  featuredMovie: any;
 
   constructor(private movieService: MovieService) {}
 
   ngOnInit() {
     this.movieService.getMovies().subscribe((data) => {
       this.movies = data;
+      this.featuredMovie = this.movies[0];
     });
   }
 }

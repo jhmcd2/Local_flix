@@ -1,0 +1,7 @@
+<!-- music-grid.component.html -->
+<div class="music-grid">
+  <div class="music-card" *ngFor="let music of musics">
+    <img [src]="music.thumbnailUrl" alt="music.title" />
+    <div class="music-title">{{ music.title }}</div>
+  </div>
+</div>

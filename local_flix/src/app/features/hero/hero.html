@@ -1,0 +1,8 @@
+<!-- hero.component.html -->
+<div class="hero" [ngStyle]="{'background-image': 'url(' + movie?.backgroundImageUrl + ')'}">
+  <div class="hero-content">
+    <h1>{{ movie?.title }}</h1>
+    <p>{{ movie?.description }}</p>
+    <button class="play-btn">Play</button>
+  </div>
+</div>
