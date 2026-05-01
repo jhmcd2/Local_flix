@@ -1,1 +1,8 @@
-<p>movie-detail works!</p>
+<div *ngIf="movie">
+  <h2>{{ movie.title }}</h2>
+  <img [src]="movie.posterUrl" alt="{{ movie.title }}" />
+  <p>{{ movie.description }}</p>
+  <p><strong>Genre:</strong> {{ movie.genre }}</p>
+  <p><strong>Release Date:</strong> {{ movie.releaseDate | date }}</p>
+  <button (click)="goToPlayer()">Watch Now</button>
+</div>

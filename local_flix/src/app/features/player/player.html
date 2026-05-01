@@ -1,1 +1,9 @@
-<p>player works!</p>
+// src/app/features/player/player.component.html
+<div *ngIf="movieId">
+  <h2>Playing Movie ID: {{ movieId }}</h2>
+  <!-- Embed video player or player UI -->
+  <video controls>
+    <source [src]="'/assets/videos/' + movieId + '.mp4'" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>

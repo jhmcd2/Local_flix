@@ -1,0 +1,27 @@
+// src/app/features/movie-detail/movie-detail.component.scss
+.movie-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.movie-detail img {
+  width: 50%;
+  border-radius: 8px;
+}
+
+.movie-detail button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.movie-detail button:hover {
+  background-color: #b20710;
+}

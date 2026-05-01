@@ -1,7 +1,6 @@
 <!-- movie-grid.component.html -->
 <div class="movie-grid">
-  <div class="movie-card" *ngFor="let movie of movies">
-    <img [src]="movie.thumbnailUrl" alt="movie.title" />
-    <div class="movie-title">{{ movie.title }}</div>
+  <div class="movie-card" *ngFor="let movie of movies" (click)="selectMovie(movie)"></div>>
+    <img [src]="movie.posterUrl" alt="{{ movie.title }}" />
   </div>
 </div>
