@@ -7,4 +7,5 @@ export interface Comics {
   description: string;
   rating: number;
   videoUrl: string;
+  tags: string[];
 }

@@ -7,4 +7,5 @@ export interface Movie {
   description: string;
   rating: number;
   videoUrl: string;
+  tags: string[];
 }

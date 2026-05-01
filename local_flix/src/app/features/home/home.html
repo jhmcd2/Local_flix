@@ -1,5 +1,16 @@
 <!-- home.component.html -->
-<h2>Home</h2>
-<app-navbar-grid></app-navbar-grid>
-<app-hero [movie]="featuredMovie"></app-hero>
-<app-movie-grid [movies]="movies"></app-movie-grid>
+<div *ngIf="inSecurity; else loggedOut">
+    <p> Welcome {{userFirstName}}</p>
+    <button (click)="logout()">Logout</button>
+    <div *ngIf="admin">
+        <p>Welcome Home Admin</p>
+        <!---ADMIN PAGE-->
+    </div>
+    <h2>Home</h2>
+    <app-navbar-grid></app-navbar-grid>
+    <app-hero [movie]="featuredMovie"></app-hero>
+    <app-movie-grid [movies]="movies"></app-movie-grid>
+</div>
+<ng-template #loggedOut>
+  <p>You are not logged in. Please <a routerLink="/login">login</a>.</p>
+</ng-template>

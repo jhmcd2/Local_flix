@@ -7,4 +7,5 @@ export interface Images {
   description: string;
   rating: number;
   videoUrl: string;
+  tags: string[];
 }
